@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="#">Home</a>
+  <a href="#band" class="#">About</a>
+  <a href="#tour" class="#">Skill</a>
+  <a href="#contact" class="#">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="ck2.jpg"
+  style="width:100%">
+  <img class="mySlides" src="ck3.jpg"
+  style="width:10s0%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>Chandresh Chaudhary</i></p>
+  <p class="w3-justify">We have created a fictional band website. I am new here. </p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Chandresh</p>
+    <img src="ck1.jpg" alt="Chandresh" style="width:100%">
+    <p>Chandresh is the smartest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Chandresh</p>
+    <img src="ck2.jpg" alt="PUBG" style="width:100%">
+    <p>Chandresh is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Chandresh</p>
+    <img src="ck3.jpg" alt="Chandresh" style="width:100%">
+    <p>Chandresh is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="https://www.facebook.com/profile.php?id=100006362084791" target="_blank">Chandresh Chaudhary</a>
+  </p>
+</footer>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>
